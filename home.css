@@ -1,0 +1,139 @@
+/* Main headings CSS */
+.hero{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+/* Skill card CSS */
+.skills{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    margin: 3rem;
+    gap: 2rem;
+}
+
+.skill-cards{
+    box-shadow: 0 1px 3px 1px lightgray;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.skills img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Work button CSS */
+.work{
+    padding: 0.5rem;
+    background-color: rgb(160, 41, 196);
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1.5em;
+}
+
+.work a{
+    color: white;
+    text-decoration: none;
+}
+
+.work a:hover{
+    color: rgb(248, 174, 232);
+}
+
+@media (min-width: 768px) {
+    /* Skill card CSS */
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3rem;
+        gap: 2rem;
+    }
+
+    /* Work button CSS */
+    .work{
+        grid-column: 2/3;
+        padding: 0.5rem;
+        background-color: rgb(160, 41, 196);
+        list-style-type: none;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    }
+
+    /* Nav CSS */
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+    /* Skill card CSS */
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3rem;
+        gap: 2rem;
+    }
+
+    /* Work button CSS */
+    .work{
+        grid-column: 2/3;
+        padding: 1rem;
+        font-size: 1em;
+        background-color: rgb(160, 41, 196);
+        list-style-type: none;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    }
+
+    /* Nav CSS */
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) {
+    /* Skill card CSS */
+    .skills{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3rem;
+        gap: 2rem;
+    }
+
+
+    /* Work button CSS */
+    .work{
+        grid-column: 2/3;
+        padding: 1rem;
+        font-size: 1em;
+        background-color: rgb(160, 41, 196);
+        list-style-type: none;
+        text-align: center;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+    }
+ 
+    /* Nav CSS */
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

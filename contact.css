@@ -1,0 +1,152 @@
+/* Grid CSS */
+.contact-grid{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    margin: 3rem;
+    gap: 2rem;
+}
+
+/* Form CSS */
+.contact-form{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem;
+    width: 90%;
+}
+
+h2{
+    text-align: left;
+    padding-bottom: 0.5rem;
+}
+
+.form-group{
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+
+label{
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid rgb(211, 209, 209);
+    border-radius: 5px;
+}
+
+button{
+    color: #fff;
+    background-color: rgb(160, 41, 196);
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+/* Contact info and Map CSS */
+.map-container{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 1rem;
+    margin-bottom: 5rem;
+    width: 90%;
+}
+
+iframe{
+    width: 100%;
+}
+
+.contact-info{
+    padding: 5px;
+}
+
+.contact{
+    color: rgb(34, 15, 119);
+    text-decoration: underline;
+}
+
+.contact:hover{
+    color: rgb(248, 174, 232);
+}
+
+@media (min-width: 768px) {
+    /* Grid CSS */
+    .contact-grid{
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        margin: 3rem;
+        gap: 2rem;
+    }
+
+    /* Form CSS */
+    .contact-form{
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 1rem;
+        width: 90%;
+    }
+
+    /* Map and info CSS */
+    .map-container{
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 1rem;
+        width: 90%;
+    }
+
+    /* Nav CSS */
+    nav{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Grid CSS */
+    .contact-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 3rem;
+        gap: 2rem;
+    }
+
+    /* Form CSS */
+    .contact-form{
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 1rem;
+        width: 90%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    /* Map and info CSS */
+    .map-container{
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        padding: 1rem;
+        border-radius: 5px;
+        margin: 1rem;
+        width: 90%;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    /* Nav CSS */
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
